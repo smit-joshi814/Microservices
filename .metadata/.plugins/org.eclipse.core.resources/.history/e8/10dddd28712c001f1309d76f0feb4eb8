@@ -1,0 +1,30 @@
+package com.microservice.jobms.job.dto;
+
+import com.microservice.jobms.job.Job;
+import com.microservice.jobms.job.external.Company;
+
+public class JobWithCompanyDTO {
+	private Long id;
+	private String title;
+	private String description;
+	private String minSalary;
+	private String maxSalary;
+	private Company company;
+
+	public Job getJob() {
+		return job;
+	}
+
+	public void setJob(Job job) {
+		this.job = job;
+	}
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
+
+}

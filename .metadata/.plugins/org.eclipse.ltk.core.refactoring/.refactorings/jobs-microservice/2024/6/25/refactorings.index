@@ -1,0 +1,13 @@
+1718543555399	Delete element
+1718543568837	Delete element
+1718543791645	Move compilation unit
+1718543795281	Delete element
+1718543829003	Delete element
+1718543898686	Rename method 'getCompany'
+1718543903782	Rename method 'setCompany'
+1718544763224	Rename package 'com.microservice.jobs'
+1718605512563	Rename type 'JobWithCompanyDTO'
+1718605546477	Rename local variable 'jobWithCompanyDTO'
+1718605565184	Rename local variable 'jobWithCompanyDTO'
+1718605575936	Rename local variable 'jobWithCompanyDTO'
+1718605615630	Rename method 'mapToJobWithCompanyDto'

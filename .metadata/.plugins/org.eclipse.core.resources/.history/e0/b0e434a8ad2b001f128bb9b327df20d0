@@ -1,0 +1,46 @@
+package com.revision.spring.review.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.revision.spring.review.Review;
+import com.revision.spring.review.ReviewRepository;
+import com.revision.spring.review.ReviewService;
+
+public class ReviewServiceImpl implements ReviewService{
+
+	@Autowired
+	private ReviewRepository reviewRepository;
+	
+	@Override
+	public List<Review> findAllReviews() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Review getReviewById(Long reviewId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void createReview(Review review) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateReview(Review review, Long reviewId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Boolean deleteReview(Long reviewId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

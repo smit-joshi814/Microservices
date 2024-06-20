@@ -1,0 +1,17 @@
+package com.microservice.jobms.job;
+
+import java.util.List;
+
+public interface JobService {
+
+	List<JobWithCompanyDTO> findAll();
+
+	void createJob(Job job);
+
+	Job getJobById(Long id);
+
+	Boolean deleteJob(Long jobId);
+
+	void updateJob(Job job, Long jobId);
+
+}

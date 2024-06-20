@@ -1,0 +1,5 @@
+package com.microservice.reviewms.review.dto;
+
+public class ReviewMessage {
+
+}

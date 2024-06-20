@@ -1,0 +1,68 @@
+package com.revision.spring.review.impl;
+
+import java.util.List;
+import java.util.Objects;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.revision.spring.review.Review;
+import com.revision.spring.review.ReviewRepository;
+import com.revision.spring.review.ReviewService;
+
+@Service
+public class ReviewServiceImpl implements ReviewService {
+
+	@Autowired
+	private ReviewRepository reviewRepository;
+
+	@Override
+	public List<Review> findAllReviews() {
+		return reviewRepository.findAll();
+	}
+
+	public List<Review> findAllReviews(Long companyId) {
+		return reviewRepository.findByCompanyId(companyId);
+	}
+
+	@Override
+	public Review getReviewById(Long reviewId) {
+		return reviewRepository.findById(reviewId).orElse(null);
+	}
+
+	@Override
+	public void createReview(Review review) {
+		reviewRepository.save(review);
+	}
+
+	@Override
+	public void updateReview(Review newReview, Long reviewId) {
+		reviewRepository.findById(reviewId).ifPresent(review -> {
+			if (Objects.nonNull(newReview.getTitle()) && !newReview.getTitle().equalsIgnoreCase("")) {
+				review.setTitle(newReview.getTitle());
+			}
+			if (Objects.nonNull(newReview.getDescription()) && !newReview.getDescription().equalsIgnoreCase("")) {
+				review.setDescription(newReview.getDescription());
+			}
+			if (Objects.nonNull(newReview.getRating())) {
+				review.setRating(newReview.getRating());
+			}
+			if (Objects.nonNull(newReview.getCompany())) {
+				review.setCompany(newReview.getCompany());
+			}
+			reviewRepository.save(review);
+		});
+
+	}
+
+	@Override
+	public Boolean deleteReview(Long reviewId) {
+		try {
+			reviewRepository.deleteById(reviewId);
+			return Boolean.TRUE;
+		} catch (Exception e) {
+			return Boolean.FALSE;
+		}
+	}
+
+}

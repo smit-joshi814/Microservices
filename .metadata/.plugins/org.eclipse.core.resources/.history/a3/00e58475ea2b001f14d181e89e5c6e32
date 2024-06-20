@@ -1,0 +1,16 @@
+package com.revision.spring.company;
+
+import java.util.List;
+
+public interface CompanyService {
+
+	List<Long> findAll();
+	
+	Company getCompanyById(Long companyId);
+	
+	void createCompany(Company company);
+	
+	void updateCompany(Company company,Long companyId);
+	
+	Boolean deleteCompany(Long companyId);
+}

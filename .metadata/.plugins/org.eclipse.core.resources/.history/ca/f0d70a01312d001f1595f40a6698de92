@@ -1,0 +1,17 @@
+package com.microservice.companyms.company.messaging;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.microservice.companyms.company.CompanyService;
+import com.microservice.companyms.company.dto.ReviewMessage;
+
+public class ReviewMessageConsumer {
+
+	@Autowired
+	private CompanyService companyService;
+	
+	public void consumeMessage(ReviewMessage reviewMessage) {
+		companyService.updateCompany(reviewMessage);
+	}
+	
+}

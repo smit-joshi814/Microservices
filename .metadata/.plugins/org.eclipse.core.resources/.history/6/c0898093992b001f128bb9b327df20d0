@@ -1,0 +1,10 @@
+package com.revision.spring.job;
+
+
+public class Job {
+private Long Id;
+private String title;
+private String description;
+private String minSalary;
+private String maxSalary;
+}

@@ -1,0 +1,11 @@
+package com.microservice.jobms.job;
+
+public class Snippet {
+	# H2 Configuration
+	#spring.h2.console.enabled=true
+	#spring.datasource.url=jdbc:h2:mem:test
+	#spring.jpa.show-sql=true
+	spring.jpa.hibernate.ddl-auto=create-drop
+	
+}
+

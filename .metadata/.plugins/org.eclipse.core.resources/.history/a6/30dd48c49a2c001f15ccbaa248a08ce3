@@ -1,0 +1,12 @@
+package com.microservice.jobms.job.clients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.microservice.jobms.job.external.Company;
+
+@FeignClient(name = "COMPANY-SERVICE")
+public interface CompanyClient {
+	@GetMapping("companies/{id}")
+	Company getCompany(Long companyId);
+}

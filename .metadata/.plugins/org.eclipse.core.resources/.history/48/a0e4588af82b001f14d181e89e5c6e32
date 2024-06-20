@@ -1,0 +1,9 @@
+package com.microservice.jobms.job.dto;
+
+import com.microservice.jobms.job.Job;
+import com.microservice.jobms.job.external.Company;
+
+public class JobWithCompanyDTO {
+private Job job;
+private Company company;
+}

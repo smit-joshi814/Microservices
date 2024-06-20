@@ -1,0 +1,8 @@
+package com.microservice.companyms.company.clients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient("REVIEW-MICROSERVICE")
+public class ReviewClient {
+
+}

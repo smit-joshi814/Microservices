@@ -1,0 +1,5 @@
+package com.microservice.companyms.company.clients;
+
+public class ReviewClient {
+
+}

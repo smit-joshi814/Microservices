@@ -1,0 +1,10 @@
+package com.microservice.jobms.job.mapper;
+
+import com.microservice.jobms.job.Job;
+import com.microservice.jobms.job.dto.JobWithCompanyDTO;
+
+public class JobMapper {
+public static JobWithCompanyDTO mapToJobWithCompanyDto(Job job,Company company) {
+	
+}
+}

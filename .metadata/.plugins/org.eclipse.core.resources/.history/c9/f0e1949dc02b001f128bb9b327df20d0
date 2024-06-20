@@ -1,0 +1,12 @@
+spring.application.name=spring-revision
+# Changing Server Port
+#server.port=8081
+
+# H2 Configuratio
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:test
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+# actuator
+management.endpoints.web.exposure.include=*

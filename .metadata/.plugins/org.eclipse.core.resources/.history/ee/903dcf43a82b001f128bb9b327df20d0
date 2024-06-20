@@ -1,0 +1,5 @@
+package com.revision.spring.company;
+
+public class CompanyController {
+
+}

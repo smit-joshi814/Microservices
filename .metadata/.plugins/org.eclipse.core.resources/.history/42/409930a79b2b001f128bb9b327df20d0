@@ -1,0 +1,8 @@
+package com.revision.spring.job;
+
+import org.springframework.stereotype.Service;
+
+public class JobService {
+
+	
+}
