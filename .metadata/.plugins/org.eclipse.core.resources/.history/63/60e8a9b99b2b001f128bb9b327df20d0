@@ -1,7 +1,0 @@
-package com.revision.spring.job;
-
-
-public interface JobService {
-
-	
-}

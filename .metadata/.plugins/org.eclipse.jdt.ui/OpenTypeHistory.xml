@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=category-microservice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.smit.categoryms.category{CategoryService.java[CategoryService" modifiers="513" timestamp="1721579024600"/>
+    <typeInfo handle="=products-microservice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.smit.productms.product{ProductService.java[ProductService" modifiers="513" timestamp="1721587116621"/>
+    <typeInfo handle="=products-microservice/C:\/Users\/smitj\/.m2\/repository\/org\/yaml\/snakeyaml\/2.2\/snakeyaml-2.2.jar=/maven.pomderived=/true=/=/maven.groupId=/org.yaml=/=/maven.artifactId=/snakeyaml=/=/maven.version=/2.2=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.yaml.snakeyaml.parser(Production.class[Production" modifiers="1536" timestamp="1718538236724"/>
+</typeInfoHistroy>

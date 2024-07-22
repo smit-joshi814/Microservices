@@ -1,5 +1,0 @@
-package com.microservice.jobms.job.clients;
-
-public interface ReviewClient {
-
-}

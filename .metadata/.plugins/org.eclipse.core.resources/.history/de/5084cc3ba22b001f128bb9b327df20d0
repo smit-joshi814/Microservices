@@ -1,7 +1,0 @@
-package com.revision.spring.job;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface JobRepository extends JpaRepository<T, ID> {
-
-}

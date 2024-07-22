@@ -1,5 +1,0 @@
-package com.microservice.jobms.job;
-
-public class AppConfig {
-
-}

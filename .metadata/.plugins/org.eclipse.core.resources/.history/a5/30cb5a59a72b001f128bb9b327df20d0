@@ -1,9 +1,0 @@
-package com.revision.spring.company;
-
-public interface CompanyService {
-
-	
-	void createCompany(Company company);
-	
-	
-}

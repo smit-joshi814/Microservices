@@ -1,5 +1,0 @@
-package com.microservice.companyms.company.messaging;
-
-public class ReviewMessageConsumer {
-
-}
